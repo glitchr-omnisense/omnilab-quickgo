@@ -1,0 +1,1 @@
+{"numberOfHits":1,"results":[[{"child":"GO:0019825","parent":"GO:0036094","relationship":"is_a"},{"child":"GO:0036094","parent":"GO:0005488","relationship":"is_a"},{"child":"GO:0005488","parent":"GO:0003674","relationship":"is_a"}]],"pageInfo":null}

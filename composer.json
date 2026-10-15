@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/quickgo",
+    "type": "library",
+    "description": "Omnilab QuickGO: a Gene Ontology term (GO:0005829) - its name, definition, aspect, synonyms, comment, obsolescence, direct parents by relation and children - a UniProt protein with the GO terms it is annotated to by aspect and evidence, its annotations with their evidence, reference and curator, and a search of terms, through the EBI's QuickGO services, no key needed.",
+    "keywords": [
+        "science",
+        "biology",
+        "gene ontology",
+        "go",
+        "quickgo",
+        "annotations",
+        "uniprot",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\QuickGo\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\QuickGo\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
