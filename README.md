@@ -1,6 +1,6 @@
 # omnilab/quickgo
 
-The Gene Ontology for [glitchr/omnilab](https://github.com/glitchr-studio/omnilab), through QuickGO,
+The Gene Ontology for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab), through QuickGO,
 the EBI's browser of GO terms and annotations: a GO term (`GO:0005829`, cytosol) with its name,
 definition, aspect, synonyms, comment, whether it is obsolete, its direct parents by relation
 (`is_a`, `part_of`, `regulates`...) and its children; a UniProt protein (`P68871`) with the terms
