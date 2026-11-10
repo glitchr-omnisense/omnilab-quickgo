@@ -45,6 +45,17 @@ The Gene Ontology Consortium, "The Gene Ontology knowledgebase in 2023", Genetic
 "QuickGO: a web-based tool for Gene Ontology searching", Bioinformatics 2009,
 [10.1093/bioinformatics/btp536](https://doi.org/10.1093/bioinformatics/btp536). No rate is published.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://www.ebi.ac.uk/QuickGO/api/index.html on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: CC-BY-4.0; commercial use: allowed.
+- Credit: required: Gene Ontology data (release date / DOI), CC BY 4.0; cite Ashburner et al. 2000 and The Gene Ontology Consortium, "The Gene Ontology knowledgebase in 2026", Nucleic Acids Res., doi:10.1093/nar/gkaf1292 (https://geneontology.org/docs/go-citation-policy/).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "quickgo",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": true,
+            "text": "Gene Ontology data (release date / DOI), CC BY 4.0; cite Ashburner et al. 2000 and The Gene Ontology Consortium, \"The Gene Ontology knowledgebase in 2026\", Nucleic Acids Res., doi:10.1093/nar/gkaf1292",
+            "url": "https://geneontology.org/docs/go-citation-policy/",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": "CC-BY-4.0"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://geneontology.org/docs/go-citation-policy/",
+        "policy": "https://www.ebi.ac.uk/QuickGO/api/index.html",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Read 2026-11-10: GO citation policy (GO data and products under CC BY 4.0: copyright notice, licence notice, disclaimer, link, release date), the QuickGO API page (no rate stated; use binds to the EMBL-EBI privacy notice and terms of use) and the EMBL-EBI terms of use (https://www.ebi.ac.uk/about/terms-of-use). No RateLimit header on a live call. The package README cites the GO 2023 paper; the policy page now asks for the 2026 one."
+    }
+}
