@@ -35,6 +35,34 @@ A term is named in the core's `go` scheme (`go:0005829`, displayed `GO:0005829`)
 reaches QuickGO from any source that gives a UniProt accession (`$collector->collect('uniprot',
 'P68871')`): the protein's GO terms join it as related things.
 
+## Install and a first call
+
+```sh
+composer require omnilab/quickgo
+```
+
+A real call, with no account and no key: the GO term cytosol in QuickGO. `mailto` is your address,
+sent in the User-Agent so that the service can reach you before it blocks a caller; the source keeps
+to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\QuickGo\QuickGoSourceFactory;
+
+$quickgo = (new QuickGoSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$term = $quickgo->entity('GO:0005829');
+echo $term->id, ' ', $term->label, ' (', $term->kind, ')', "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+go:0005829 cytosol (cellular component)
+```
+
 ## Terms of use
 
 The Gene Ontology and its annotations are under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
